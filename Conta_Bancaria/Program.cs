@@ -18,7 +18,7 @@ namespace Conta_Bancaria
 
             try
             {
-                using (StreamWriter salva = new StreamWriter(extrato,true))
+                using (StreamWriter salva = new StreamWriter(extrato,false))
                 {
                     do
                     {
