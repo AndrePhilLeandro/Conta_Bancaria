@@ -36,7 +36,7 @@ namespace Conta_Bancaria
                             case 1:
                                 Console.Write("Digite o Valor a ser sacado: R$");
                                 saque = double.Parse(Console.ReadLine());
-                                if (saque < saldo)
+                                if (saque <= saldo)
                                 {
                                     Console.WriteLine($"Saque de R${saque} Realizado com Sucesso.");
                                     saldo = saldo - saque;
